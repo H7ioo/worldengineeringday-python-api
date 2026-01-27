@@ -8,6 +8,7 @@ import os
 
 app = FastAPI(title="Istanbul Seismic Dashboard API - Full Data Edition")
 
+# TODO: Add origins
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -103,8 +104,8 @@ async def get_dashboard_data(
                 "building_damage": {
                     "very_severe": int(row['cok_agir_hasarli_bina_sayisi']),
                     "severe": int(row['agir_hasarli_bina_sayisi']),
-                    "moderate": int(row['orta_hasarli_bina_sayisi']),
-                    "slight": int(row['hafif_hasarli_bina_sayisi'])
+                    # "moderate": int(row['orta_hasarli_bina_sayisi']),
+                    # "slight": int(row['hafif_hasarli_bina_sayisi'])
                 },
                 "human_impact": {
                     "casualties": int(row['can_kaybi_sayisi']),
