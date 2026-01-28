@@ -1,4 +1,4 @@
-# Istanbul Seismic Risk API
+# Megacity Seismic Resilience API
 
 A high-performance **FastAPI** backend designed to calculate and serve neighborhood-level seismic risk data for Istanbul. This project was developed as part of the "Resilient Cities" initiative for the World Engineering Day Hackathon.
 
